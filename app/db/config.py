@@ -12,7 +12,7 @@ DB_PASS = config("DB_PASS")
 DB_NAME = config("DB_NAME")
 DB_HOST = config("DB_PORT", cast=int)
 
-DATABASE_URL = f"postgressql+asyncpg://{DB_USER}:{DB_PASS}@localhost:{DB_HOST}/{DB_NAME}"
+DATABASE_URL = f"postgresql+asyncpg://{DB_USER}:{DB_PASS}@localhost:{DB_HOST}/{DB_NAME}"
 
 
 
